@@ -30,12 +30,12 @@ while(cap.isOpened()):
     hsv = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
 
     # Range for lower red
-    lower_green1 = np.array([0,120,70])
+    lower_green1 = np.array([0,120,80])
     upper_green1 = np.array([10,255,255])
     mask1 = cv2.inRange(hsv, lower_green1, upper_green1)
     
     # Range for upper range
-    lower_green2 = np.array([170,120,70])
+    lower_green2 = np.array([170,120,80])
     upper_green2 = np.array([180,255,255])
     mask2 = cv2.inRange(hsv,lower_green2,upper_green2)
     
